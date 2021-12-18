@@ -32,7 +32,22 @@ ___
 
 ___   
 
-- ### Code Example
+- ### Code Example   
+
+  Basic mapping wto JPA with Hibernate:   
+  @Entity   
+  @Table(name = "employees")   
+  public class Employee {   
+  @Id   
+  @GeneratedValue(strategy = GenerationType.IDENTITY)   
+  private long employee_id;   
+  @Column(name = "first_name")   
+  private String name;   
+  @Column(name = "last_name")   
+  private String secName;   
+  @Column(name = "email_id")   
+  private String email;   
+  */default constructor, getters and setters*   
 
 ___   
 

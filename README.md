@@ -1,1 +1,1 @@
-# rsschool-cv
+https://xRoody.github.io/rsschool-cv/cv

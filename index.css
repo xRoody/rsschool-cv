@@ -16,7 +16,7 @@ body{
 }
 #wrapper{
     width: 1440px;
-    background: linear-gradient(-7.3deg, rgba(255,218,189,1) 1800px, rgba(255,255,255,1) 1801px);
+    background: linear-gradient(-7.3deg, rgba(255,218,189,1) 74%, rgba(255,255,255,1) 74.1%);
 
 }
 #dark_Back_Wrap{
@@ -184,7 +184,7 @@ pre{
     flex-direction: row;
 }
 #first_col{
-    height: 700px;
+    height: max-content;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -222,4 +222,61 @@ footer{
     background-color: #8d8d8d;
     width: max-content;
     border: solid #333333;
+}
+#Contacts_sect{
+    margin-top: 0;
+}
+#talk_img{
+    margin-top: 25px;
+    background-color: #dbdbdb;
+    border: solid #333333;
+    position: relative;
+    width:227px;
+    height:265px;
+    margin-bottom: 25px;
+}
+#talk_img::after{
+    content: "Let's chat!";
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: #333333;
+    position: absolute;
+    width: 100%;
+    padding-top: 8%;
+    padding-bottom:8% ;
+    bottom: 0;
+    left: 0;
+}
+#form_my{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+label{
+    display: flex;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 22px;
+    height: max-content;
+    margin-top: 30px;
+    justify-content: start;
+}
+textarea{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    resize: none;
+}
+button{
+    margin-top: 15px;
+    height: 32px;
+    width: 100px;
+    font-family: 'Lexend Exa', sans-serif;
+}
+input{
+    width: 50%;
+}
+#education_sect{
+    margin-top: 50px;
 }

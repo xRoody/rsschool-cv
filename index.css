@@ -1,0 +1,225 @@
+html{
+    scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff7f1;
+}
+#wrapper{
+    width: 1440px;
+    background: linear-gradient(-7.3deg, rgba(255,218,189,1) 1800px, rgba(255,255,255,1) 1801px);
+
+}
+#dark_Back_Wrap{
+    filter: drop-shadow(0px 4px 4px #8d8d8d) ;
+}
+#dark_Back {
+    height: 372px;
+    background-color: #262F34;
+    position: relative;
+    clip-path: polygon(0 0, 1440px 0, 1440px 228px, 0 412px);
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#avatar{
+    height: 296px;
+    width: inherit;
+    background-image: linear-gradient(172.7deg,white 49.7%,#262F34 50%);
+    position: absolute;
+    clip-path: circle(148px at 50% 50%);
+    top: 171px;
+}
+#avatar:before{
+    content: "";
+    background-color: #dbdbdb;
+    width: 1440px;
+    height: 274px;
+    display: block;
+    clip-path: circle(137px at 50% 50%);
+    position: relative;
+    top: 11px;
+}
+#avatar_Img{
+    position: absolute;
+    top: 68px;
+    left: 607px;
+    clip-path: circle(137px at 50% 80px);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav_Text{
+    position: relative;
+    text-decoration: none;
+    font-size: 22pt;
+    color: white;
+    font-family: 'Lexend Exa', sans-serif;
+}
+.nav_Text:after{
+    background-color: white;
+    position: absolute;
+    display: block;
+    width: 0;
+    right: 0;
+    height: 2px;
+    content: "";
+    transition: width 0.5s ease-out;
+}
+.nav_Text:focus:after,
+.nav_Text:hover:after{
+    width: 100%;
+}
+#name{
+    font-size: 50px;
+    font-family: 'Lexend Tera', sans-serif;
+    width: min-content;
+    margin-top: 30px;
+}
+h1{
+    height: 150px;
+    width: 500px;
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 300px;
+    margin-bottom: 0;
+}
+#info_Wrapper{
+    background-color: rgba(0, 128, 0, 0);
+    height: min-content;
+    width: 1320px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+}
+h2{
+    font-size: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+#h_about{
+    align-self: flex-end;
+}
+.text{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 26px;
+    width: min-content;
+    align-self: center;
+    margin-top: 40px;
+}
+pre{
+    width: min-content;
+    margin: 0;
+    display: inline-block;
+    font-family: 'Lexend Exa', sans-serif;
+}
+#skills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+#h_skills{
+    align-self: flex-start;
+}
+#skill_list{
+    margin-top: 45px;
+    margin-left: 70px;
+    list-style: none;
+}
+.skill{
+    display: flex;
+    margin-top: 35px;
+}
+.skill_name{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 32px;
+}
+.exp_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 30px;
+}
+.exp{
+    background-color: #F34A4A;
+    border: solid #262F34 2px;
+    width: 35px;
+    height: 30px;
+    align-self: center;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+.exp_empty{
+    background-color: rgba(243, 74, 74, 0);
+    border: solid #262F34 2px;
+    width: 35px;
+    height: 30px;
+    align-self: center;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+#inner_wrapper{
+    margin-top: 75px;
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+}
+#first_col{
+    height: 700px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.first_c_ul{
+    margin-top: 50px;
+}
+#sec_col{
+    background-color: rgba(255, 0, 0, 0);
+    width: 50%;
+    height: 500px;
+}
+footer{
+    background-color: #F34A4A;
+    height: 100px;
+    padding: 0 78px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.f_text{
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 24px;
+}
+.f_div {
+    display: flex;
+    flex-direction: row;
+}
+#Contacts_sect{
+    margin-top: 0;
+}
+#talk_img{
+    background-color: #8d8d8d;
+    width: max-content;
+    border: solid #333333;
+}

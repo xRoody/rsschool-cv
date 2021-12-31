@@ -196,7 +196,7 @@ pre{
 #sec_col{
     background-color: rgba(255, 0, 0, 0);
     width: 50%;
-    height: 500px;
+    height: min-content;
 }
 footer{
     background-color: #F34A4A;
